@@ -1,3 +1,3 @@
 # BI_kmeans
-Patrick Wais 
-Mehrdad Mozafary
+# Patrick Wais 
+# Mehrdad Mozafary
