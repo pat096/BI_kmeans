@@ -1,8 +1,4 @@
-#This is the testing branch
-#Merge to main
-#Commit and push 2
-#Wais Patrick Assignment 3
-#This is the main branch, and I update it on GITHUB
+#Wais Patrick & Mehrdad Mozafary
 import pandas as pd
 import numpy as np
 # test test test Mehrdad Mehrdad 1234
