@@ -2,9 +2,7 @@
 #This is the main branch, and I update it on GITHUB
 import pandas as pd
 import numpy as np
-# test test test Mehrdad Mehrdad 1234
 
-#test 2 test 2 test 3 test test 4 test 5 test 6 test 7 test 8 test 9
 df = pd.read_csv('input.csv',delimiter=';',header=None, decimal=",")
 
 number_cluster = df.loc[0,0]
