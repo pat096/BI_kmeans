@@ -88,14 +88,6 @@ output = pd.DataFrame(data=output)
 result = df2.append(output)
 
 print(result)
-print("Update to main branch")
-print("TEstBranch")
-print("Test16:29")
-print("Brnach1")
-
-
-print("Hello")
-
 
 
 
