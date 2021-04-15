@@ -1,4 +1,5 @@
 #Wais Patrick & Mehrdad Mozafary
+#Patrick Test Branch
 import pandas as pd
 import numpy as np
 # test test test Mehrdad Mehrdad 1234
@@ -21,15 +22,6 @@ for i in range(0,3):
     k_means_array[i][0] = np.random.uniform(min(array[:,1]), max(array[:,0]))#X-coor
     k_means_array[i][1] = np.random.uniform(min(array[:,1]), max(array[:,1]))#Y-coor
 
-#Calculate manhattan distance
-#print('Array')
-#print(array[0,:])
-#print("KMEans 1")
-#print(k_means_array[0][:])
-#print("KMEans 2")
-#print(k_means_array[1][:])
-#print("KMEans 3")
-#print(k_means_array[2][:])
 mean_array_k1X = []
 mean_array_k2X = []
 mean_array_k3X = []
@@ -51,7 +43,6 @@ while(flag == 0):
     mean_array_k3Y.clear()
 
     for i in range(0,18):
-        #mean_array_k1X_old = k_means_array[0][0]
         sum1 = abs(array[i,0] - k_means_array[0][0]) + abs(array[i,1] - k_means_array[0][1])
         sum2 = abs(array[i,0] - k_means_array[1][0]) + abs(array[i,1] - k_means_array[1][1])
         sum3 = abs(array[i,0] - k_means_array[2][0]) + abs(array[i,1] - k_means_array[2][1])
@@ -82,12 +73,10 @@ while(flag == 0):
 df2 = pd.DataFrame(np.array([[number_cluster,'' ,'' ], [k_means_array[0][0], k_means_array[0][1], ''], [k_means_array[1][0], k_means_array[1][1],''],[k_means_array[2][0],k_means_array[2][1],''],
                              [iteration,'',''],[18,2,'']]))
 
-#print(df2)
-#print(output)
 output = pd.DataFrame(data=output)
 result = df2.append(output)
-
-print(result)
+#Write to csv file with correct delimeter, decimal symbol and without row/column numbers
+result.to_csv('output.csv', index=False, sep=';',decimal='.',header=False)
 
 
 
